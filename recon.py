@@ -30,6 +30,7 @@ def read_barcode(frame):
         # with open("barcode_result.txt", mode ='w') as file:
         #     file.write("Recognized Barcode:" + barcode_info)
     
+    
 
     return barcodes
 
@@ -57,6 +58,8 @@ def main(): #1
         json.dump(data, file, indent = 4)
     camera.release()
     cv2.destroyAllWindows()#4
+
+
     
     
 if __name__ == '__main__':
