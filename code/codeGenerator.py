@@ -5,14 +5,14 @@ from barcode.writer import ImageWriter
 
 def generate(code):
     img = qrcode.make(code)
-    img.save("QRcode.png")
+    img.save("data/QRcode.png")
 
 
 
     my_Ean = code
     a = barcode.get_barcode_class('code128')
     a = a(my_Ean,writer=ImageWriter())
-    a.save("BarCode")
+    a.save("data/BarCode")
 
 
 
