@@ -35,7 +35,7 @@ if __name__ == '__main__':
         ret,frame = camera.read() #2
         while ret:
             ret, frame = camera.read()
-            read_barcode(frame)
+            read_barcode(frame,(0,255,0))
             cv2.imshow('Barcode/QR code reader', frame)
             if cv2.waitKey(1) & 0xFF == 27:
                 break 

@@ -2,6 +2,7 @@ import cv2
 import recon
 import time
 import threading
+import drone_control
 
 
 #  Function Camera ON 
@@ -12,7 +13,7 @@ def Camera_Conect():
     while True:
         cv2.imshow('Barcode/QR code reader', IMG)
         if not CAPTURE_ON:
-            _,IMG = CAMERA.read()
+            IMG = drone_control.ShowCam()
         if cv2.waitKey(1) & 0xFF == 27:
             break
     
@@ -27,7 +28,7 @@ def Capture(color):
     timeout = time.time() + 10
 
     while True:
-        _,img = CAMERA.read()
+        img = drone_control.ShowCam()
 
         if time.time() < timeout:
             recon.read_barcode(img,color)
@@ -53,9 +54,9 @@ def Timer():
 
 if __name__ == '__main__':
     CAMERA = None
-    CAMERA = cv2.VideoCapture(0)
+    #CAMERA = cv2.VideoCapture(0)
     CAPTURE_ON = False
-    _,IMG = CAMERA.read()
+    IMG = drone_control.ShowCam()
     thread_Camera = threading.Thread(target = Camera_Conect, daemon= True)
     thread_Camera.start()
     Capture((255,0,0))
