@@ -10,10 +10,10 @@ def generate(code):
 
 
     my_Ean = code
-    a = barcode.get_barcode_class('code128')
-    a = a(my_Ean,writer=ImageWriter())
-    a.save("data/BarCode")
+    new_ean = barcode.get_barcode_class('code128')
+    new_ean = new_ean(my_Ean,writer=ImageWriter())
+    new_ean.save("data/BarCode")
 
 
 
-generate('Codigo 10')
+generate('me lo fumo en pipa')
