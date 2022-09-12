@@ -4,9 +4,7 @@ import cv2
 
 
 tello = Tello()
-
 tello.connect()
-
 tello.streamon()
 
 
