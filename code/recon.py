@@ -1,6 +1,5 @@
 import cv2
 from pyzbar import pyzbar
-import json
 
 def read_barcode(frame,color):
     barcodes = pyzbar.decode(frame)

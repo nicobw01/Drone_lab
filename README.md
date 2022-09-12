@@ -86,10 +86,18 @@ Se decide usar [Dron Tello](https://m.dji.com/product/tello) de [DJI](https://ww
     ~~~
     pip install qrcode
     ~~~
+- ## **Pyzbar** 
+    
+    Esta libreria tiene un algoritmo que detecta en una imagen los codigos ya sean qr o codigos de barras, devolviendonos no solo el contendido del codigo sino su posicion su tamaño entre otros datos referente a los mismo, es a donde se envian las imagenes capturadas por [**Opencv**](https://opencv.org/)
+    ######  [**Pyzbar 0.19**](https://pypi.org/project/pyzbar/)
+    ~~~
+    pip install pyzbar
+    ~~~
 
 
 
 
-## -[**subir**](#top) 
+
+ ## [**Ir arriba**](#top) 
 
 
