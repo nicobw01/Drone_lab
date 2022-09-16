@@ -32,8 +32,8 @@ Este proyecto busca presentar a los drones como una herrmienta para el apoyo log
 
 Se decide usar [Dron Tello](https://m.dji.com/product/tello) de [DJI](https://www.dji.com/)
  debido a su enfoque en el aprendizaje y su bajo costo, ademas de venir preparado para ser programado de manera agil, lo cual premite los testeos de la primera version de este proyecto, con el fin de conocer sus alcances y limitaciones, para determinar lo que se buscara en la proxima iteracion del mismo.
-
-<br/>
+Durante el proceso de desarrollo y testeo de código, se llega a la conclusión de que el dron tello ofrece bastantes funciones y es funcional para testeos básicos, pero limita el desarrollo por estabilidad. A través de la documentación de de [DJI](https://www.dji.com/), se conoce el [DJI Tello EDU](https://m.dji.com/product/tello-edu?from=searchresults), el cual permite acceder a todas las funciones de Tello, y añade un SDK 2.O, bases para misiones y vuelo en enjambre. Específicamente, Tello EDU, nos permite acceder a un recurso llamado Mission pads (programa misiones) para una mayor precisión en la programación. 
+![DRON TELLO EDU](https://stormsend1.djicdn.com/tpc/uploads/sku/cover/3a72a039-a660-40ed-a137-c2df14b394a7@xlarge.png)
 <br/>
 <br/>
 
